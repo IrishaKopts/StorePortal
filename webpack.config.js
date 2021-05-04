@@ -15,7 +15,7 @@ var { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
   context: sourcePath,
   entry: {
-    app: './main.tsx'
+    app: './index.tsx'
   },
   output: {
     path: outPath,

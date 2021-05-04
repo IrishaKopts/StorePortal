@@ -1,7 +1,7 @@
 import { handleActions } from 'redux-actions';
 import { RootState } from './state';
 import { AppActions } from '../actions';
-import { AppModel } from '../models';
+import { AppModel } from 'models';
 
 const initialState: RootState.AppState = {
   user: null,
