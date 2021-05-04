@@ -1,14 +1,14 @@
 import { useMemo } from 'react';
 import { Dispatch, bindActionCreators } from 'redux';
 import { createAction } from 'redux-actions';
-import { AppModel } from 'app/models';
+import { AppModel } from '../models';
 
 export namespace AppActions {
   export enum Type {
     FAKE_ACTION = 'FAKE_ACTION',
   }
 
-  export const tempAction = createAction<PartialPick<AppModel, 'text'>>(Type.FAKE_ACTION);
+  export const tempAction = createAction<PartialPick<AppModel, 'user'>>(Type.FAKE_ACTION);
 }
 
 export type AppActions = Omit<typeof AppActions, 'Type'>;

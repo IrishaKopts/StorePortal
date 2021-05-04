@@ -1,4 +1,4 @@
-import { AppModel } from 'app/models';
+import { AppModel } from '../models';
 
 export interface RootState {
   app: RootState.AppState;
@@ -6,5 +6,5 @@ export interface RootState {
 }
 
 export namespace RootState {
-  export type AppState = AppModel[];
+  export type AppState = AppModel;
 }

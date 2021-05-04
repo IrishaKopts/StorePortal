@@ -1,13 +1,13 @@
 import { handleActions } from 'redux-actions';
 import { RootState } from './state';
-import { AppActions } from 'app/actions/actions';
-import { AppModel } from 'app/models';
+import { AppActions } from '../actions';
+import { AppModel } from '../models';
 
-const initialState: RootState.AppState = [
-  {
-    text: ''
-  }
-];
+const initialState: RootState.AppState = {
+  user: null,
+  authenticationError: '',
+  userLoaded: true
+};
 
 export const appReducer = handleActions<RootState.AppState, AppModel>(
   {
