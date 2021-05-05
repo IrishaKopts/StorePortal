@@ -9,7 +9,7 @@ const Layout = ({ children }: LayoutProps): JSX.Element => {
   return (
     <>
       <Header>
-        <LogoImage src="../../images/logo.svg" alt="logo" />
+        <LogoImage src="../../assets/images/boots_logo.svg" alt="logo" />
       </Header>
       {children}
     </>

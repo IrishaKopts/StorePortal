@@ -1,10 +1,10 @@
-import { AppModel } from 'models';
+import { AppStateModel } from '../store/types';
 
 export interface RootState {
-  app: RootState.AppState;
+  app: AppStateModel;
   router?: any;
 }
 
 export namespace RootState {
-  export type AppState = AppModel;
+  export type AppState = AppStateModel;
 }

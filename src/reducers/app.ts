@@ -1,7 +1,7 @@
 import { handleActions } from 'redux-actions';
-import { RootState } from './state';
 import { AppActions } from '../actions';
-import { AppModel } from 'models';
+import { AppStateModel } from '../store/types';
+import { RootState } from './index';
 
 const initialState: RootState.AppState = {
   user: null,
@@ -9,7 +9,7 @@ const initialState: RootState.AppState = {
   userLoaded: true
 };
 
-export const appReducer = handleActions<RootState.AppState, AppModel>(
+export const appReducer = handleActions<RootState.AppState, AppStateModel>(
   {
     [AppActions.Type.FAKE_ACTION]: (state, action) => {
       return state;

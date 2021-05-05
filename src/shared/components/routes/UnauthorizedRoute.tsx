@@ -14,7 +14,7 @@ export const UnauthorizedRoute = ({ ...props }): JSX.Element => {
         user ? (
           <Redirect to={AppRouts.HOME} />
         ) : (
-          userLoaded ? React.createElement(props.component, {}) : (<></>)
+          userLoaded ? React.createElement(props.component, {}) : <></>
         )
     }
     </Route>
