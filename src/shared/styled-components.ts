@@ -8,14 +8,6 @@ export const GlobalStyle = createGlobalStyle`
   }
 `;
 
-export const MainTitle = styled.h1`
-  font-size: 30px;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.23em;
-  text-align: center;
-`;
-
 export const Input = styled.input<any>(
   ({ invalid, theme: { colors } }) => `
     width: 100%;

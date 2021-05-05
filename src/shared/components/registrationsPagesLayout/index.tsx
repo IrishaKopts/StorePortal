@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import { useTranslation } from 'react-i18next';
 import { translations } from 'locales/i18n';
-import { Wrapper, StyledMainTitle, FooterLogoWrapper, FooterLogoCaption } from './styles';
+import { Wrapper, MainTitle, FooterLogoWrapper, FooterLogoCaption } from './styles';
 
 interface RegistrationsPagesLayoutProps {
   title: string;
@@ -14,7 +14,7 @@ const RegistrationsPagesLayout = ({ title, children }: RegistrationsPagesLayoutP
   return (
     <>
       <Wrapper>
-        <StyledMainTitle>{title}</StyledMainTitle>
+        <MainTitle>{title}</MainTitle>
         {children}
       </Wrapper>
       <footer>

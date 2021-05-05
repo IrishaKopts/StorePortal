@@ -1,6 +1,4 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import { MainTitle } from 'shared/styled-components';
 
 export const Wrapper = styled.div`
   max-width: 750px;
@@ -9,7 +7,12 @@ export const Wrapper = styled.div`
   margin: 70px auto 40px;
 `;
 
-export const StyledMainTitle = styled(MainTitle)`
+export const MainTitle = styled.h1`
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.23em;
+  text-align: center;
   margin-bottom: 40px;
 `;
 
