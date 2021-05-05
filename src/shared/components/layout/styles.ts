@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Header = styled.header`
-  background-color: ${({ theme: { colors } }) => colors.sinbad};
+  background-color: ${({ theme: { colors } }) => colors.generalHealth};
   padding: 15px 30px;
 `;
 
