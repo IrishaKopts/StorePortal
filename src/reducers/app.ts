@@ -4,7 +4,7 @@ import { AppStateModel } from '../store/types';
 import { RootState } from './index';
 
 const initialState: RootState.AppState = {
-  user: null,
+  user: { id: 1, lastName: 'Ivanov', firstName: 'Ivan' },
   authenticationError: '',
   userLoaded: true
 };
