@@ -15,7 +15,7 @@ var { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
   context: sourcePath,
   entry: {
-    app: './main.tsx'
+    app: './index.tsx'
   },
   output: {
     path: outPath,
@@ -29,7 +29,8 @@ module.exports = {
     // (jsnext:main directs not usually distributable es6 format, but es6 sources)
     mainFields: ['module', 'browser', 'main'],
     alias: {
-      app: path.resolve(__dirname, 'src/')
+      containers: path.resolve(__dirname, 'src/containers'),
+      shared: path.resolve(__dirname, 'src/shared'),
     }
   },
   module: {

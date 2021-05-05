@@ -1,6 +1,6 @@
 import { User } from '../shared/types';
 
-export interface AppModel {
+export interface AppStateModel {
   user: User | null;
   authenticationError: string;
   userLoaded: boolean;
