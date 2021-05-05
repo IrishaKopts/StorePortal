@@ -1,4 +1,20 @@
-import styled from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
+
+export const GlobalStyle = createGlobalStyle`
+  body {
+    background: ${({ theme: { colors } }: any) => {
+      return colors.grayLightSecondary;
+    }};
+  }
+`;
+
+export const MainTitle = styled.h1`
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.23em;
+  text-align: center;
+`;
 
 export const Input = styled.input<any>(
   ({ invalid, theme: { colors } }) => `

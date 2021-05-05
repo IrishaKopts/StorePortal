@@ -1,0 +1,26 @@
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import { MainTitle } from 'shared/styled-components';
+
+export const Wrapper = styled.div`
+  max-width: 750px;
+  background: ${({ theme: { colors } }) => colors.white};
+  padding: 70px 85px;
+  margin: 70px auto 40px;
+`;
+
+export const StyledMainTitle = styled(MainTitle)`
+  margin-bottom: 40px;
+`;
+
+export const FooterLogoWrapper = styled.figure`
+  max-width: 90px;
+  margin: 0 auto;
+`;
+
+export const FooterLogoCaption = styled.figcaption`
+  font-weight: 300;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 5px;
+`;
