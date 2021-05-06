@@ -42,7 +42,7 @@ export const ValidationError = styled.p`
 `;
 
 export const ButtonPrimary = styled.button(
-  ({ theme: { colors } }) => `
+  ({ disabled, theme: { colors } }) => `
     display: block;
     width: 100%;
     max-width: 300px;
@@ -54,7 +54,11 @@ export const ButtonPrimary = styled.button(
     border-radius: 5px;
     text-transform: uppercase;
     padding: 10px 20px;
-    cursor: pointer;
     margin: 0 auto;
+    font-family: Boots Sharp;
+    justify-content: center;
+    align-items: center;
+    opacity: ${disabled ? '50%' : '100%'};
+    cursor: ${disabled ? 'default' : 'pointer'};
   `
 );

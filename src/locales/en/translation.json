@@ -1,7 +1,11 @@
 {
   "logOut": "Log out",
   "home": {
-    "scanPdfLabel": "Scan pdf(s)"
+    "scanPdf": "Scan pdf (s)",
+    "printPdf": "Print pdf (s)",
+    "printShipping": "Print shipping label",
+    "updateStatus": "Update status",
+    "searchPlaceholder": "Search for..."
   },
   "login": {
     "mainTitle": "Welcome to the online doctor services store portal",

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { ButtonPrimary } from '../../styled-components';
 
 export const Header = styled.header`
   background-color: ${({ theme: { colors } }) => colors.generalHealth};
@@ -10,21 +11,15 @@ export const LogoImage = styled.img`
   max-width: 135px;
 `;
 
-export const Button = styled.button`
+export const Button = styled(ButtonPrimary)`
   height: 40px;
   width: 137px;
   top: 30px;
   right: 34px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   padding: 0 20px;
   position: absolute;
-  background: #FFFFFF;
-  border: 1px solid #0067B2;
+  background: ${({ theme: { colors } }) => colors.white};
+  border: 1px solid ${({ theme: { colors } }) => colors.primary};
   border-radius: 5px;
-  color: #0067B2;
-  text-transform: uppercase;
-  cursor: pointer;
+  color: ${({ theme: { colors } }) => colors.primary};
 `;
