@@ -29,8 +29,10 @@ module.exports = {
     // (jsnext:main directs not usually distributable es6 format, but es6 sources)
     mainFields: ['module', 'browser', 'main'],
     alias: {
+      assets: path.resolve(__dirname, 'src/assets'),
       containers: path.resolve(__dirname, 'src/containers'),
       shared: path.resolve(__dirname, 'src/shared'),
+      locales: path.resolve(__dirname, 'src/locales'),
     }
   },
   module: {
